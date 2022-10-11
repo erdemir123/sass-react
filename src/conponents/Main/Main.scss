@@ -1,0 +1,52 @@
+@import "../../scss/variables";
+
+
+.card-container{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+
+.cards{
+    background-color: $cardNavBgColor;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius:10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 500px;
+    
+    &:hover .card-over{
+        bottom: 0;
+    }
+    .title{
+        color: $backgroundColor;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    .card-over{
+        color: white;
+        position: absolute;
+        bottom: -300px;
+        left: 0;
+        font-size: 1.5rem;
+        background-color: rgba(0,0,0,.5);
+        transition: .6s;
+        padding: .5rem;
+    }
+
+}
+
+}
+
+img{
+    width: 460px;
+    height: 350px;
+    object-fit: cover;
+    transition: .6s;
+    &:hover{
+        filter: grayscale(100%);
+    }
+}

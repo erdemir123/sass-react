@@ -1,0 +1,29 @@
+@import "../../scss/variables","../../scss/mixins";
+.navbar{
+background-color: $cardNavBgColor;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+
+a{
+    color: #ffff;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    &:hover{
+        background-color: $backgroundColor;
+        color: #000000;
+    }
+}
+
+}
+@include media-md{
+    .navbar{
+        flex-direction: column;
+        text-align: center;
+        a{
+            width: 100%;
+        }
+    }
+}
